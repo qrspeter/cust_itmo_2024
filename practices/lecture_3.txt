@@ -1,0 +1,142 @@
+Windows PowerShell
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+尝试新的跨平台 PowerShell https://aka.ms/pscore6
+
+PS E:\China\Lectures> python
+Python 3.12.8 (tags/v3.12.8:2dc476b, Dec  3 2024, 19:30:04) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2+2
+4
+>>> 2/0.1
+20.0
+>>> lst1 = [1, 2.2, 'wer']
+>>> lst2 = [1, 2.2, 'wer']
+>>> print(lst1 + lst2)
+[1, 2.2, 'wer', 1, 2.2, 'wer']
+>>> print(lst1 * 2)
+[1, 2.2, 'wer', 1, 2.2, 'wer']
+>>> lst3 = lst1[1:2]
+>>> print(lst3)
+[2.2]
+>>> lst4 = [x for x in range(10)]
+>>> print(lst4)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> print(lst4[3:6])
+[3, 4, 5]
+>>> print(lst4[3:])
+[3, 4, 5, 6, 7, 8, 9]
+>>> print(lst4[:])
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> print(lst4[:5])
+[0, 1, 2, 3, 4]
+>>> print(lst4[2])
+2
+>>> print(lst4[9])
+9
+>>> print(lst4[-1])
+9
+>>> print(lst4[-2])
+8
+>>> test_results = {'Peter': 10, "Bob": NaN}'
+  File "<stdin>", line 1
+    test_results = {'Peter': 10, "Bob": NaN}'
+                                            ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> test_results = {'Peter': 10, "Bob": NaN}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'NaN' is not defined
+>>> test_results = {'Peter': 10, "Bob": nan}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'nan' is not defined
+>>> test_results = {'Peter': 10, "Bob": 0}
+>>> print(test_resuls)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'test_resuls' is not defined. Did you mean: 'test_results'?
+>>> print(test_results)
+{'Peter': 10, 'Bob': 0}
+>>> test_results["Bob"] = 7
+>>> print(test_results)
+{'Peter': 10, 'Bob': 7}
+>>> fruits = {"banana", "apple", "orange"}
+>>> print(fruits)
+{'apple', 'banana', 'orange'}
+>>> fruits = {"banana", "apple", "orange", "apple"}
+>>> print(fruits)
+{'apple', 'banana', 'orange'}
+>>> fruits.remove("banana")
+>>> print(fruits)
+{'apple', 'orange'}
+>>> fruits.remove("banana")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'banana'
+>>> hash('banana')
+-1738126961853437348
+>>> hash([1, 2, 3])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'list'
+>>> hash((1, 2, ))
+-3550055125485641917
+>>> hash('asdfagsdfhgasdljfhgaljsdh')
+-7240627648430427419
+>>> hash('asdfagsdfhgasdljfhgaljsdk')
+3460485379736556220
+>>> hash('asdfagsdfhgasdljfhgaljsdh')
+-7240627648430427419
+>>> hash('Total success!')
+2109896812552726056
+>>> bin(hash('!'))
+'-0b1001011010010111011111111101001000010011010101010011111101111'
+>>> hex(hash('!'))
+'-0x12d2effa426aa7ef'
+>>> exit()
+PS E:\China\Lectures> cd ..
+PS E:\China> cd .\practices\
+PS E:\China\practices> python .\sum_mul.py
+11
+11.4
+adfg
+Traceback (most recent call last):
+  File "E:\China\practices\sum_mul.py", line 10, in <module>
+    print(our_sum(7, 'fg'))
+          ^^^^^^^^^^^^^^^^
+  File "E:\China\practices\sum_mul.py", line 2, in our_sum
+    return a+b
+           ~^~
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+PS E:\China\practices> python
+Python 3.12.8 (tags/v3.12.8:2dc476b, Dec  3 2024, 19:30:04) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> txt = "\t Hello World\n"
+>>> print(txt)
+         Hello World
+
+>>> txt.strip()
+'Hello World'
+>>> print(txt)
+         Hello World
+
+>>> txt = txt.strip()
+>>> print(txt)
+Hello World
+>>> print(txt[2:5])
+llo
+>>> print(txt[-1])
+d
+>>> print('Hello', 'World')
+Hello World
+>>> print('Hello' + 'World')
+HelloWorld
+>>> x = 5
+>>> print(dtype(x))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'dtype' is not defined. Did you mean: 'type'?
+>>> print(type(x))
+<class 'int'>
+>>> print(type(x)),

@@ -1,0 +1,4 @@
+1. Open LED_royalBlue.csv, plot and normalize a spectrum. Save it in a *.csv file.
+2. Open LED280nm.csv, plot spectra, select suitable curves, normalize, calculate average and save it to a file.
+3. Do the same with LED370nm.csv.
+4. Plot the averaged spectra on one graph.

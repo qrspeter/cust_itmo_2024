@@ -1,0 +1,27 @@
+Zhang	Jiarui	25
+Liu	 Chang	24
+Ni	Junxi	24
+ye		23
+Niu	Junliang	23
+Sun	Zihan	23
+Zhang	Hanyu	23
+Zhang	Liuhaoyu	23
+Feng	Xuanang	22
+Wu	Yue	22
+Duan	Qiaohui	22
+Li	Yijia	21
+Liu	Xiangying	21
+Miao	Jialong	21
+Li	Zhengtong	21
+M		20
+Zhao	Yi	20
+Cao	Shuming	20
+Liu	Dingyu	20
+Zhao	Xiaonan	19
+Chen	Zhonghan	19
+Li	Xiang	18
+Duan	Qiaohui	17
+tian		17
+Jiang	Junyu	17
+Li	Zhengtong	0
+Liu		Xiangying	0
