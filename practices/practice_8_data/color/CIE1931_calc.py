@@ -22,18 +22,19 @@ def rgbcalc(cmf, spectra, step):
         
     return tuple(a) 
     
-def loadfiles(file_cmf,file_spect):
+# the function is under development, is not used jet    
+def loadfiles(file_cmf, file_spect):
     cmf_o = np.loadtxt(file_cmf, delimiter=',')
     sp_o = np.loadtxt(file_spect,delimiter='\t',skiprows = 212)
-    x_sp_o,y_sp_o=sp_o[:,0], sp_o[:,1]
-    x_interp=np.arange(x_min,x_max+1,step)
+    x_sp_o, y_sp_o = sp_o[:,0], sp_o[:,1]
+    x_interp=np.arange(x_min, x_max+1, step)
     x_cmf_o = cmf_o[:,0]
     y_sp_interp = np.interp(x_interp,x_sp_o,y_sp_o)
     y_cmf_o=cmf_o[:,0]
     y_cmf_interp=[]
     for i in range(1, 4):
         y_cmf_interp.append(np.interp(x_interp,x_cmf_o,cmf_o[:,i]))
-    return(y_cmf_interp) # y_sp_interp returns nothing, I should return both arrays or use 2 different functions.      
+    return(y_cmf_interp, y_sp_interp) # y_sp_interp returns nothing, I should return both arrays or use 2 different functions.      
     
 cmf_o = np.loadtxt(csv_dir + cmf, delimiter=',')
 sp_o = np.loadtxt(csv_dir + spectra, delimiter='\t', skiprows = 212)
