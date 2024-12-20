@@ -1,0 +1,40 @@
+Problem:
+
+Write a program (using the NumPy library) that recognizes the spectrum of luminescence of two kinds. Different types of samples are distributed in folders inside ./PbS_spectra/ folder. In all cases, these are PbS nanocrystals that luminesce in near infra-red range).
+
+For the first stage, it is enough to use two folders to choose from, you can take another during testing.   
+
+The main file of the program is main.py. It opens data folders, calls training, and calculates the type of spectrum.
+
+If interpolation is necessary, use the numpy.interp function.
+
+The work should be distributed among the performers:
+
+1. "Team Leader".
+
+Works with the main.py file.
+Chooses the function interface: arguments, return values, and names. Set working range. 
+Approves the dimensionality of the data used (i.e., the step or number of steps).
+Helps colegues if it is necessary.
+
+The advantages are that you write small code, and usually you need to use functions created by others. 
+The disadvantages are to repair and fix everything if something goes wrong.
+
+2. "Loader-normalizer" - loading files and normalizing data.
+
+Works with the load.py file
+Manually checks the input files (if there are any damages).
+Writes a function for opening files, resampling (using interp()) and normalizing, assembling them into a single array and compiling an array/list of labels
+
+Advantages - you can do it without looking back at others, there is everything for testing, there is no dependence on others.
+The disadvantages are to do a lot of code thinking. He can even make a class.
+
+3. "Teacher"
+
+Works with the train.py file
+Makes a function for selecting weights (take the while loop from practice), which takes an array of normalized data and output values, and returns an array of weights.
+He also makes the function of determining the type.
+
+Advantages - the function will be written already at the lecture, as well as a function to test a single spectrum.
+Disadvantages - it is desirable to understand how this feature works.
+
