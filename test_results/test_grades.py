@@ -41,28 +41,33 @@ def normalize_dct(dct, max_points):
 
 if __name__ == "__main__":    
 
-    test_files = ['input_test.txt', 'test1.txt', 'test2.txt'] 
+    unnormalized_files = ['input_test.txt', 'test1.txt', 'test2.txt'] 
     max_points = [15, 27, 19]
-    practice_files = ['practice1.txt', 'activity1.txt']
+    point_files = ['practice1.txt', 'activity1.txt', 'practice2.txt', 'test3.txt', 'practice3.txt', 'activity2.txt']
     names = 'students_names.txt'
 
     dict_31 = load_names(names)
 
-    for file in test_files:
+    for file in unnormalized_files:
         #print(file)
         load_results(file, dict_31)
 
     #print(dict_31)
-    pprint.pprint(dict_31, sort_dicts=False)
+    #pprint.pprint(dict_31, sort_dicts=False)
     
     dict_31_norm = normalize_dct(dict_31, max_points)
 
-    for file in practice_files:
+    for file in point_files:
         load_results(file, dict_31_norm)
 
-    with open(__file__[:-2] + 'txt', 'w') as f:  
+    with open(__file__[:-2] + 'txt', 'w') as f:
+        header = unnormalized_files + point_files
+        header = '#' + 14*' ' + ' '.join([i[:-4] for i in header]) 
+        f.write(header + '\n')
+        print(header)
         for name, grades in dict_31_norm.items():  
+            total = int(sum(grades[1:]))
             st = ',\t'.join([str(round(i)) for i in grades])
-            fstring = f'{name + ":":15s} {st}'
+            fstring = f'{name + ":":15s} {st} {total=}'
             f.write(fstring + '\n')
             print(fstring)

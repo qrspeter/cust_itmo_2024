@@ -1,22 +1,23 @@
-Miao Jialong:   6,	8,	10,	13,	0
-Liu Xiangying:  6,	8,	9,	11,	1
-Zhang Hanyu:    7,	9,	8,	11,	0
-Li Yijia:       7,	8,	7,	11,	0
-Feng Xuanang:   5,	8,	8,	11,	0
-Ni Junxi:       5,	9,	9,	11,	2
-Duan Qiaohui:   6,	8,	10,	11,	1
-Ma Mengyang:    7,	7,	9,	11,	0
-Zhang Liuhaoyu: 7,	9,	9,	11,	0
-Niu Junliang:   7,	9,	8,	11,	2
-Wu Yue:         5,	8,	8,	11,	0
-Liu Dingyu:     7,	7,	8,	13,	0
-Zhang Jiarui:   7,	9,	8,	11,	0
-Cao Shuming:    7,	7,	8,	11,	0
-Jiang Junyu:    5,	6,	8,	13,	2
-Liu Chang:      5,	9,	9,	13,	0
-Li Zhengtong:   5,	8,	7,	11,	0
-Zhao Yi:        4,	7,	7,	11,	0
-Li Xiang:       3,	7,	8,	13,	0
-Zhao Xiaonan:   4,	7,	9,	11,	0
-Sun Zihan:      6,	9,	8,	11,	0
-Chen Zhonghan:  3,	7,	9,	11,	0
+#              input_test test1 test2 practice1 activity1 practice2 test3 practice3 activity2
+Miao Jialong:   6,	8,	10,	13,	0,	8,	10,	9,	4 total=62
+Liu Xiangying:  6,	8,	9,	11,	1,	8,	10,	8,	4 total=59
+Zhang Hanyu:    7,	9,	8,	11,	0,	10,	9,	8,	2 total=57
+Li Yijia:       7,	8,	7,	11,	0,	8,	9,	8,	0 total=51
+Feng Xuanang:   5,	8,	8,	11,	0,	8,	10,	9,	0 total=54
+Ni Junxi:       5,	9,	9,	11,	2,	10,	9,	10,	4 total=64
+Duan Qiaohui:   6,	8,	10,	11,	1,	10,	10,	8,	5 total=63
+Ma Mengyang:    7,	7,	9,	11,	0,	10,	6,	9,	2 total=54
+Zhang Liuhaoyu: 7,	9,	9,	11,	0,	10,	10,	9,	2 total=60
+Niu Junliang:   7,	9,	8,	11,	2,	10,	9,	8,	5 total=62
+Wu Yue:         5,	8,	8,	11,	0,	10,	10,	8,	5 total=60
+Liu Dingyu:     7,	7,	8,	13,	0,	8,	8,	10,	0 total=54
+Zhang Jiarui:   7,	9,	8,	11,	0,	8,	10,	8,	2 total=56
+Cao Shuming:    7,	7,	8,	11,	0,	8,	10,	8,	3 total=55
+Jiang Junyu:    5,	6,	8,	13,	2,	10,	8,	9,	2 total=58
+Liu Chang:      5,	9,	9,	13,	0,	8,	9,	8,	0 total=56
+Li Zhengtong:   5,	8,	7,	11,	0,	10,	8,	8,	3 total=55
+Zhao Yi:        4,	7,	7,	11,	0,	10,	7,	9,	0 total=51
+Li Xiang:       3,	7,	8,	13,	0,	8,	6,	8,	0 total=50
+Zhao Xiaonan:   4,	7,	9,	11,	0,	8,	7,	8,	0 total=50
+Sun Zihan:      6,	9,	8,	11,	0,	10,	10,	8,	2 total=58
+Chen Zhonghan:  3,	7,	9,	11,	0,	8,	9,	9,	0 total=53
