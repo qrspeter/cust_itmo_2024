@@ -1,6 +1,5 @@
 import numpy as np
 from colour.plotting import *
-import matplotlib.pyplot as plt
 '''
 RGB = np.array([[79, 52, 45]])# , [87, 22, 67]
 
@@ -13,31 +12,19 @@ plot_RGB_chromaticities_in_chromaticity_diagram_CIE1931(RGB, 'ITU-R BT.709')
 
 
 cie1931 = 'lin2012xyz2e_5_7sf.csv'
-spr = 'led6p3_12v0052.ISD'
+spr = 'led6p3_12v0008.ISD'
 
-path = './practice_8_data/color/csv/'
+path = './color/csv/'
 
 
 sen = np.loadtxt(path + cie1931, delimiter=',')
-spec = np.loadtxt(path + spr, delimiter='\t', skiprows=216)
+spec = np.loadtxt(path + spr, delimiter='\t', skiprows=162)
 
-plt.plot(spec[:, 0],spec[:, 1])
-plt.show()
 
 spec_int = np.interp(sen[:,0], spec[:, 0], spec[:, 1])
 
-comp =[]
-for i in range(3):
-    comp1 = spec_int*sen[:, i + 1]
-    x = np.sum(comp1)    
-    comp.append(x)
-    
-print(comp)
+comp1 = spec_int*sen[:,1]
 
-comp = np.array(comp)
+x = np.sum(comp1)
 
-comp = comp/np.sum(comp)
-
-print(comp)
-
-plot_RGB_chromaticities_in_chromaticity_diagram_CIE1931(comp)
+print(x)
