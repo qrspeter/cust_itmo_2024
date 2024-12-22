@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
     unnormalized_files = ['input_test.txt', 'test1.txt', 'test2.txt'] 
     max_points = [15, 27, 19]
-    point_files = ['practice1.txt', 'activity1.txt', 'practice2.txt', 'test3.txt', 'practice3.txt', 'activity2.txt']
+    point_files = ['practice1.txt', 'activity1.txt', 'activity1a.txt', 'practice2.txt', 'test3.txt', 'practice3.txt', 'activity2.txt', 'exam.txt']
     names = 'students_names.txt'
 
     dict_31 = load_names(names)
